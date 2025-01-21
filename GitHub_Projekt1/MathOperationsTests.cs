@@ -32,7 +32,7 @@ namespace GitHub_Projekt1
             int result = MathOperations.Add(a, b);
 
             // Assert
-            Assert.NotEqual(expected, result);
+            Assert.Equal(expected, result);
         }
 
         [Fact]
