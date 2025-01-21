@@ -24,7 +24,7 @@ namespace GitHub_Projekt1
         public void Add_ShouldReturnIncorrectSum()
         {
             // Arrange
-            int a = 4;
+            int a = 2;
             int b = 3;
             int expected = 9;
 
