@@ -21,6 +21,21 @@ namespace GitHub_Projekt1
         }
 
         [Fact]
+        public void Add_ShouldReturnIncorrectSum()
+        {
+            // Arrange
+            int a = 5;
+            int b = 3;
+            int expected = 9;
+
+            // Act
+            int result = MathOperations.Add(a, b);
+
+            // Assert
+            Assert.Equal(expected, result);
+        }
+
+        [Fact]
         public void Subtract_ShouldReturnCorrectDifference()
         {
             // Arrange
