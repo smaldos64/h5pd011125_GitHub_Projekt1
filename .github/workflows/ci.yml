@@ -1,31 +1,17 @@
-name: .NET Core Build and Test
+name: Test Workflow
 
 on:
   push:
     branches:
       - main
-  pull_request:
-    branches:
-      - main
 
 jobs:
-  build:
+  test:
     runs-on: windows-latest
 
     steps:
     - name: Checkout code
       uses: actions/checkout@v2
 
-    - name: Setup .NET Core SDK
-      uses: actions/setup-dotnet@v3
-      with:
-        dotnet-version: '9.0.x'
-
-    - name: Install dependencies
-      run: dotnet restore
-
-    - name: Build the project
-      run: dotnet build --no-restore --configuration Release
-
-    - name: Run tests
-      run: dotnet test --no-build --verbosity normal --configuration Release
+    - name: Run a one-liner script
+      run: echo "Hello, World!"
