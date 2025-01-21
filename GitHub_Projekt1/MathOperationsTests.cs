@@ -26,7 +26,7 @@ namespace GitHub_Projekt1
             // Arrange
             int a = 2;
             int b = 3;
-            int expected = 9;
+            int expected = 8;
 
             // Act
             int result = MathOperations.Add(a, b);
