@@ -54,9 +54,9 @@ namespace GitHub_Projekt1
         public void Multiply_ShouldReturnCorrectProduct()
         {
             // Arrange
-            int a = 4;
+            int a = 5;
             int b = 3;
-            int expected = 12;
+            int expected = 15;
 
             // Act
             int result = MathOperations.Multiply(a, b);
