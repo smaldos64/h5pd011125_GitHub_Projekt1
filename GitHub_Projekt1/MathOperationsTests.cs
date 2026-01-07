@@ -56,7 +56,7 @@ namespace GitHub_Projekt1
             // Arrange
             int a = 5;
             int b = 3;
-            int expected = 16;
+            int expected = 17;
 
             // Act
             int result = MathOperations.Multiply(a, b);
